@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<base href="http://www.runoob.com"target="_blank">
+<title>我的教程（myself.com）</title>
+<style type="text/css">
+body {background-color:grey}
+p {color:white}
+<p style="color:blue;margin-left:20px;">This is a paragraph.</p>
+</style>
+</head>
+<body>
+<h1 style="text-align:center;" id="ca">我的第一个标题</h1>
+<h2>我的第二个标题</h2>
+<form name="myForm"  onsubmit="return validateForm()" method="get">
+姓：<input type="text"  placeholder="搜索 天猫 商品/品牌/店铺" name="fname" >
+<input type="submit" value="提交" >
+</form> 
+<script>
+alert("我的第一个 JavaScript");
+document.write(Date()+"<br>");
+document.write(Number(" "));
+function myFunction()
+{
+  <!-- window.location.href = 'http://www.baidu.com/'; -->
+    document.getElementById("ca").innerHTML="我的第一个 JavaScript 函数";
+}
+a = 5;
+b = 6;
+c = a + b;
+console.log(c);
+</script> 
+<h3>我的第三个标题</h3>
+<table border="1" cellpadding="10">
+<caption>My Laughing</caption>
+    <tr>
+        <th>Row 1, cell 1</th>
+        <td>Row 1, cell 2</td>
+    </tr>
+    <tr>
+        <th>row 2, cell 1</th>
+        <td>row 2, cell 2</td>
+    </tr>
+</table>
+<a href="http://www.baidu.com" style="text-decoration:none;" >百度一下，你就知道</a>
+<a href="11"style="text-decoration:none;">链接文本</a>
+<img src="file:C:/Users/单手闯红灯/Desktop/1.bmp" width="400" height="292" />
+
+<p id="cb">我的第一个段落。</p>
+
+<hr>
+<a href="javascript:void(0)">单此处什么也不会发生</a>
+<p>我的第二个段落。</p>
+<button type="button" onclick="myFunction()">皮一下</button>
+<p>这个<br>段落<br>演示了分行的效果</p>
+<script>
+function validateForm(){
+var x=document.forms["myForm"]["fname"].value;
+if (x==null || x==""){
+  alert("姓必须填写");
+  return false;
+  }
+}
+var q;
+q = 16 + "Volvo";
+document.getElementById("cb").innerHTML = q;
+</script>
+<script type="text/javascript" src="D:\tscode\src\ts\test.js"></script>
+</body>
+</html>
